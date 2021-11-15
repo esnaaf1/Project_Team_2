@@ -14,5 +14,8 @@ The Data Source contains information on age, workclass, final weight (total numb
 ### Database Engine
 Postgres - to be used for data cleaning
 
+### Machine Learning Model(s)
+We will using classification models. Our plan is to test a few different models to determine accuracy before deciding which will be used for our user interface. Our project will include live predictions.
+
 ### List of tables
-Income Table
+Income_Table - contains the columns listed in the description of data source.
