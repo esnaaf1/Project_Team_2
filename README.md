@@ -20,12 +20,13 @@ Postgres - to be used for data cleaning
 
 In the context of low-dimensional data (i.e., when the number of covariates is small compared to the sample size), logistic regression is considered a standard approach for binary classification. 
 
-In this project, we focus on prediction rather than explanation, giving the dataset we have. Logistic regression is preferred.
+In this project, we focus on prediction rather than explanation, giving the dataset we have, Logistic regression is preferred.
 
 
 - SVM vs. Logistic regression:
 
 Logistic regression works with the identified independent variable, while SVM works well with unstructured and semi-structured data like text and images. 
+
 Logistic regression is used to solve classification problems based on a statistical approach, while SVM is used for both classification and regression based on geometrical properties of the data. 
 
 In this project, we identified “income” as the independent variable. Predicting one’s income is greater than 50K or less than 50K based on these features: age, hours-per-week,  education, marital-status, work-class,  occupation, sex, relationship, race.  
@@ -41,7 +42,9 @@ Run our models with the same train test split, comparison the balanced accuracy 
                       |Balanced accuracy score   |Precision      |
  ---------------------|------------------------- |-------------- |
  SVM                  |0.7478                    |0.8372         |
+ ---------------------|--------------------------|-------------- |
  Logistic Regression  |0.7534                    |0.8396         |
+  --------------------|--------------------------|-------------- |
  Random Forest        |0.74                      |0.81           |
  
 
