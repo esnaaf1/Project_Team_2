@@ -39,6 +39,7 @@ It is a two-class classification problem. As such, Logistic regression is prefer
 
 ### Preliminary model evaluation
 Run our models with the same train test split, comparison the balanced accuracy score and precision, result as below:
+--------------------- |------------------------- |-------------- |
                       |Balanced accuracy score   |Precision      |
  ---------------------|------------------------- |-------------- |
  SVM                  |0.7478                    |0.8372         |
@@ -46,7 +47,7 @@ Run our models with the same train test split, comparison the balanced accuracy 
  Logistic Regression  |0.7534                    |0.8396         |
   --------------------|--------------------------|-------------- |
  Random Forest        |0.74                      |0.81           |
- 
+  --------------------|--------------------------|-------------- |
 
 
 Our best scores are with Logistic Regression with a balanced accuracy score of 0.75 and precision of 0.84.
