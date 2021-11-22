@@ -40,6 +40,32 @@ Income_Table - contains the columns listed in the description of data source.
 ### Training and testing dataset
 Using Scikit-learn's `train_test_split` module to split 75% of features (X) and target (y) data into training data and 25% for testing data.
 
+# Deliverable Two
+
+## Description of preliminary data pre-processing
+
+Find and drop total of 2399 missing data. Remaining 30162 rows of data for our machine learning model.
+
+Drop unnecessary columns: "fnlwgt", "education-num", "capital-gain", "capital-loss".
+
+Using `One-Hot Encoding` to fit and transform categorical variables.
+
+Using `StandardScaler` module standardizes the data so that the mean of each feature is 0 and standard deviation is 1.
+
+## Description of features used in the model
+
+1. Age: Current age (in years)
+2. Gender: Gender assigned at birth (Male/Female)
+3. Education-num: Years of education received (numerically, e.g. high school senior = 12)
+4. Education: Highest degree obtained (e.g. HS-grad, Bachelors)
+5. Occupation: Industry/role employed in (e.g. Exec-managerial, Craft-repair)
+6. Hours worked: Weekly hours employed (e.g. 40)
+
+## Description of how data was split for training/testing
+
+Using Scikit-learn's `train_test_split` module to split 75% of features (X) and target (y) data into training data and 25% for testing data.
+
+
 ### Explanation of model choice, including benefits and limitations
 
 - Random Forest vs. Logistic regression:
@@ -73,4 +99,22 @@ Run our models with the same train test split, comparison the balanced accuracy 
  Random Forest        |0.74                      |0.81           |
  
 Our best scores are with Logistic Regression with a balanced accuracy score of 0.75 and precision of 0.84.
+
+## Interactive elements
+
+Our webpage will include input boxes for users to provide the necessary information for our model to run a prediction. The inputs are the features listed above.
+
+Our webpage will also contain additional tabs which will provide the user insight into:
+
+1. Our methodology into which machine learning models were tested, which model was selected to make predictions, and the rationale behind our selection.
+2. Additional data insights into the relationship between the features and model predictions.
+
+## Tools/technologies for the creating the dashboard
+
+Programming: (Javascript, Python, HTML):
+
+* Running python script to grab inputs from web entry running ML model (logistic regression) to predict income level based on input, with output showing whether user is likely to have income above or below $50K per year. Additional pages with deeper analysis and background, as described in interactive elements.
+
+* Hosting: Heroku (free tier)
+* Tableau public: Summarizing trends in data set among features used
 
