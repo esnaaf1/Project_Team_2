@@ -14,6 +14,32 @@ The Data Source contains information on age, workclass, final weight (total numb
 ### Database Engine
 Postgres - to be used for data cleaning
 
+### List of tables
+Income_Table - contains the columns listed in the description of data source.
+
+## Machine Learning Model
+
+### Data-processing
+1.	Find and drop total of 2399 missing data. Remaining 30162 rows of data for our machine learning model.
+2.	Drop unnecessary columns: "fnlwgt", "education-num", "capital-gain", "capital-loss".
+3.	Using `One-Hot Encoding` to fit and transform categorical variables.
+4.	Using `StandardScaler` module standardizes the data so that the mean of each feature is 0 and standard deviation is 1.
+
+### Features used in the model
+- Age: Current age (in years)
+- Workclass: Employment status of an individual (e.g.	Private)
+- Education: Highest degree obtained (e.g. HS-grad, Bachelors)
+- Marital-status: Marital status of an individual (e.g. Divorced, Married-AF-spouse)
+- Occupation: Industry/role employed in (e.g. Exec-managerial, Craft-repair)
+- Relationship: Represents what this individual is relative to others(e.g. Husband, Wife)
+- Race: Descriptions of an individual’s race (e.g. White, Black)
+- Sex: Gender assigned at birth (Male/Female)
+- Hours-per-week: Weekly hours employed (e.g. 40)
+- Native-country: Country of origin for an individual
+
+### Training and testing dataset
+Using Scikit-learn's `train_test_split` module to split 75% of features (X) and target (y) data into training data and 25% for testing data.
+
 ### Explanation of model choice, including benefits and limitations
 
 - Random Forest vs. Logistic regression:
@@ -48,5 +74,3 @@ Run our models with the same train test split, comparison the balanced accuracy 
  
 Our best scores are with Logistic Regression with a balanced accuracy score of 0.75 and precision of 0.84.
 
-### List of tables
-Income_Table - contains the columns listed in the description of data source.
