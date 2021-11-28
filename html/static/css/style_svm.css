@@ -1,0 +1,26 @@
+nav {
+  text-indent: 8px;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.9;
+}
+.dropdown-item {
+  color:silver
+}
+
+
+.container h1{
+  color:rgb(60,91,89);
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.jumbotron {
+  background-color:rgba(245, 253, 247, 0.932);
+  height: 50vh;
+}
+
+.jumbotron h1 {
+  text-align: center;
+}
