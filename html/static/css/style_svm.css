@@ -14,13 +14,19 @@ nav {
   margin-bottom: 50px;
   font-size: 50px;
   font-weight: bold;
+  text-align: center;
 }
 
 .jumbotron {
   background-color:rgba(245, 253, 247, 0.932);
-  height: 50vh;
 }
 
-.jumbotron h1 {
+.jumbotron h2 {
   text-align: center;
+}
+
+img {
+  size: 50% 50%;
+  width:1100px;
+
 }
