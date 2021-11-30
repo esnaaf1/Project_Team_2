@@ -73,10 +73,10 @@ dump(scaler, open('scaler.pkl', 'wb'))
 predict_labels = ['<=50K','>50K']
 
 # Load the model.
-LogisticRegression = load(open('logisticregression_le.pkl', 'rb'))
+LogisticRegression = load(open('logisticregression.pkl', 'rb'))
 
 # Load the scaler.
-scaler = load(open('scaler_le.pkl', 'rb'))
+scaler = load(open('scaler.pkl', 'rb'))
 
 # InputData
 input_row1 = [[39, "State-gov", "Bachelors", "Never-married", "Adm-clerical", "Not-in-family", "White", "Male", 40, "United-States"]] # <=50K
@@ -85,8 +85,6 @@ input_row2 = [[28, "Private", "Bachelors", "Married-civ-spouse", "Prof-specialty
 
 input_row1_df = pd.DataFrame(input_row1, columns=["age", "workclass", "education", "marital-status", "occupation", "relationship",  "race", "sex", "hours-per-week", "native-country"]
 )
-print(input_row1_df)
-
 
 # Encode user input
 income_cat = ['workclass',
@@ -109,11 +107,11 @@ encode_df.columns = enc.get_feature_names(income_cat)
 
 # Merge one-hot encoded features and drop the originals
 input_row1_df = input_row1_df.merge(encode_df, left_index=True, right_index=True).drop(income_cat,1)
-print(input_row1_df)
+
 
 # 2. Transform each input using the scaler function.
 input_row1_scaled = scaler.transform(input_row1_df)
-
+print(f"printing input row1 scaled: {input_row1_scaled}")
 # 3. Make a prediction for each input.
 predict = LogisticRegression.predict(input_row1_scaled)
 print(f'Prediction 1 is: {predict_labels[predict[0]]}')
