@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Neural Network</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color:rgb(196, 6, 230)">Income Classfication</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:rgb(196, 6, 230)">ML Models</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="templates/forest.html">Random Forest</a>
+              <a class="dropdown-item" href="templates/Logistic Regression.html">Logistic Regression</a>
+              <a class="dropdown-item" href="templates/svm.html">SVM</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="templates/tableau.html" style="color:rgb(196, 6, 230)">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="templates/credits.html" style="color:rgb(196, 6, 230)">Credits</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Background Image 1st Row-->
+<div class="parallax" style="background-image: url('static/img/dol_sign.png'); height: 106vh;">
+
+
+  <!-- Your Code Here -->
+  <div class="container">
+
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12">
+          <div class="jumbotron">
+              <h1><strong>Neural Network Machine Learning Algorithm</strong></h1>
+              <!-- <center> <img src="" height="250" width="400"></center>  -->
+              <h3><strong>Introduction</strong></h3>
+              <p>Our dataset consisted of 101 different zoo animals with 16 different boolean attributes.</p>
+              <p>From these attributes, animals were then placed in 1 of 7 categories such as mammal, fish, or insect.
+                 The neural network was trained to detect patterns across those attributes placing an animal within its class.
+              </p>
+              <h3><strong>Training Set</strong></h3>
+              <center><img src="../resources/neural_net_training_graph.jpg" alt="neural_net_epochs" width="600" height="400"></center>
+              <ul>
+              <li>The neural network passed through the training dataset 50 times.</li>
+              <li>The model was able to achieve an accurary rating of 98.67% on the training set.</li>
+              </ul>
+              <h3><strong>Testing Set</strong></h3>
+              <center><img src="../resources/neural_net_test_results.jpg" alt="poly_kernel_svm" width="600" height="100"></center>
+              <ul>
+              <li>The neural network correctly placed an animal its class 96% of the time on the test dataset.</li>
+              <li>Loss was calculated to be .19.</li>
+              </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
