@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+        />
+    <!-- Our CSS-->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body class='bg-success'>
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-success navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Income Prediction</a>
+        </nav>
+        <div class="tab">
+            <div class="drodown">
+                <button class="tablinks" onclick="">Our Model</button>
+                <button class="tablinks" onclick="">Our Analysis</button>
+                <button class="tablinks" onclick="">Credits</button>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-5">Can we accurately predict if your income is greater or less than $50,000?</h1>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 style="color:White">Please provide us with the following information.</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <!--------------------------------------------------------------->
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                        <label for="Age">Enter your age</label>
+                        <input id = "Age" type="text" placeholder=""/>
+                    </li>
+                    <li class="list-group-item">
+                        <label for="Gender">Enter gender assigned at birth</label>
+                        <select id = "Gender" name="text" placeholder="">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item">
+                        <label for="Grade Level">Enter highest grade level completed</label>
+                        <input id="Grade Level" type="text" placeholder="High School Senior = 12"/>
+                    </li>
+                    <li class="list-group-item">
+                        <label for="Degree Type">Enter degree type</label>
+                        <input id="Degree Type" type="text" placeholder=""/>
+                    </li>
+                    <li class="list-group-item">
+                        <label for="Occupation Type">Enter occupation type</label>
+                        <input id = "Occupation Type" type="text" placeholder=""/>
+                    </li>
+                    <li class="list-group-item">
+                        <label for="Hours Per Week">Enter work hours per week</label>
+                        <input id="Hours Per Week" type="text" placeholder=""/>
+                    </li>
+                    <li>
+                        <button onclick="getResponse()" id="btn" class="btn btn-default">Submit Input
+                        </button>
+                  </ul>
+            </div>
+            <script src="static/js/income.js"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Logistic Regression <small>Binary Predictions</small></h3>
+            </div>
+            <div class="col-md-8">
+                <p>
+                A logistic regression machine learning model can be used in cases where the outcome of a prediction can be classified in a binary fashion (e.g. Yes/No, Dog/Cat, Has/Doesn't Have).  In our analysis, where we are predicting whether an individual has an income above or below a certain threshold (i.e. $50K per year), a logistic regression model is a good candidate for prediction since we are only classifying into two groups.
+                </p>
+                <p>The same feature set was used across the different machine learning models tested, including the logistic regrression model.  Based on the input features included, each individual was then classified as having an income above or below $50K per year.  The criteria included in our feature set considered type of employment (Workclass), Education level, Marital Status, specific Occupation, current Relationship, Race, Gender, and hours worked per week.  
+                </p>
+                <p>In comparison to other machine learning models tested, the logistic regression model scored the highest in terms of balanced accuracy score (0.7534), which was slightly better than the Support Vector Machine (0.7478) or Random Forest model (0.74).  Given this provided the highest level of accuracy, this model was used to develop our interactive income predictor built into our web page.  Users can enter in their own set of criteria, based on the features included, and see if they are likely to have an income above or below $50K. 
+                </p>
+                <p>Logistic regression is one of many options availble in determining an appropriate machine learning model to build out predictions.  As shown in this project, the scores were very similar among other potential models.  This demonstrates the need for testing multiple model options prior to deciding which is the best fit to predict outcomes based on your input data set.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
