@@ -1,0 +1,32 @@
+body {
+  background-image: url(../img/pic1.jpg); 
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  text-indent: 8px;
+  text-align: center;
+  font-size: 15px;
+  opacity: 0.9;
+}
+.dropdown-item {
+  color:silver
+}
+
+.jumbotron {
+  background-color:rgba(54, 58, 55, 0.664);
+  background-size: 50% 50%;
+  text-align: center;
+  height: 50vh;
+  justify-content:center;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  right: 20%;
+  color:rgb(192, 192, 192);
+  line-height: 100px;
+}

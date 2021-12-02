@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" 
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="icon" href="static\img\logo.png" type="image/x-icon">
+    <title>Income Prediction</title>
+    
+    <link rel="stylesheet" href="static/css/style_svm.css">
+
+    <style>
+      
+    </style>
+
+  </head>
+
+  <body>
+      <!-- Nav Bar --> 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Visualization</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Model Results
+              </a>
+              <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Logistic Regression</a>
+                <a class="dropdown-item" href="#">Random Forest</a>
+                <a class="dropdown-item" href="#">SVM</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>  
+      <!-- Nav Bar End-->
+      <!-- SVM model -->
+      <div class="jumbotron">
+
+        <div class="container">
+            <h1 class="display-4">SVM</h1>
+              <h5>Support vector machines (SVMs) is a supervised learning model used for both classification and regression based on geometrical properties of the data. The algorithm creates a hyperplane which is a line that separates data into two classes.
+              </h5>
+              <h5>In this analysis, we use the SVM model to train 70% of data with ten features and make the prediction on their income, which is our independent variable with binary data “<=50K” and “>50K”. Here is our SVM model performance: 
+              </h5>
+            <h2>Results</h2>
+              <img src="static/img/svm_result.png">
+              <h5></h5>
+              <h5>In this model, the precision score of group “<=50” is 86% and group “>50K” is 73%, which means that the percentage of predictions are correct; The recall score of group “<=50” is 93% and group “>50K” is 57%, which means that the percentage of  the positive cases can be found; F1 score is a weighted average of the recall and precision.</h5>
+              <h5> Overall, the performance of group “<=50K” is better than group “>50K”, the reason might be that the number of “>50K” samples in the dataset is low.</h5>
+        </div>
+
+
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
