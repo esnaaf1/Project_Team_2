@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Income Prediction</title>
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color:rgb(196, 6, 230)">Income Classfication</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false" style="color:rgb(196, 6, 230)">ML Models</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/static/forest.html">Random Forest</a>
+              <a class="dropdown-item" href="/static/Logistic Regression.html">Logistic Regression</a>
+              <a class="dropdown-item" href="/static/svm.html">SVM</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/static/tableau.html" style="color:rgb(196, 6, 230)">Analysis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/static/credits.html" style="color:rgb(196, 6, 230)">Credits</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Background Image 1st Row-->
+  <div class="parallax" style="background-image: url('static/img/dol_sign.png'); height: 106vh;">
+
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12" style="color:rgb(239, 243, 16)">
+              <h3>Analysis</h3>
+                <p>Results available on <a href="https://public.tableau.com/views/IncomeDriverAnalysis/HigherIncomeDrivers?:language=en-US&:display_count=n&:origin=viz_share_link">Tableau Public</a> and can be found below.</p>
+          </div>
+          
+      </div>
+  </div>
+
+    <div class='col-md-12' id='viz1638638364906'>
+        <noscript>
+            <a href='#'>
+                <img alt='Higher Income Drivers ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IncomeDriverAnalysis&#47;HigherIncomeDrivers&#47;1_rss.png' class='col-md-12'/>
+            </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none' class='center'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='IncomeDriverAnalysis&#47;HigherIncomeDrivers' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;IncomeDriverAnalysis&#47;HigherIncomeDrivers&#47;1.png' /> 
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>                
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1638638364906');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+  </div>
+
+  <script src="static/js/income.js"></script>
+
+</body>
+
+</html>
