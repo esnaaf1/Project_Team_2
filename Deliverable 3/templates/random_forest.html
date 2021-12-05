@@ -10,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style_forest.css">
 
 </head>
 
@@ -50,42 +50,19 @@
       </div>
     </div>
   </nav>
-  </nav>
-  <!-- Background Image 1st Row-->
-<div class="parallax" style="background-image: url('static/img/dol_sign.png'); height: 106vh;">
 
-
-  <!-- Your Code Here -->
-  <div class="container">
-
-    <!-- Row 1 -->
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-12">
-          <div class="jumbotron">
-              <h1 style="color: yellow"><strong>Neural Network Machine Learning Algorithm</strong></h1>
-              <!-- <center> <img src="" height="250" width="400"></center>  -->
-              <h3 style="color: yellow"><strong>Introduction</strong></h3>
-              <p style="color: yellow">Our dataset consisted of 101 different zoo animals with 16 different boolean attributes.</p>
-              <p style="color: yellow">From these attributes, animals were then placed in 1 of 7 categories such as mammal, fish, or insect.
-                 The neural network was trained to detect patterns across those attributes placing an animal within its class.
-              </p>
-              <h3 style="color: yellow"><strong>Training Set</strong></h3>
-              <center><img src="../resources/neural_net_training_graph.jpg" alt="neural_net_epochs" width="600" height="400"></center>
-              <ul>
-              <li style="color: yellow">The neural network passed through the training dataset 50 times.</li>
-              <li style="color: yellow">The model was able to achieve an accurary rating of 98.67% on the training set.</li>
-              </ul>
-              <h3 style="color: yellow"><strong>Testing Set</strong></h3>
-              <center><img src="../resources/neural_net_test_results.jpg" alt="poly_kernel_svm" width="600" height="100"></center>
-              <ul>
-              <li style="color:yellow">The neural network correctly placed an animal its class 96% of the time on the test dataset.</li>
-              <li style="color: yellow">Loss was calculated to be .19.</li>
-              </ul>
-
-          </div>
-        </div>
-      </div>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">Random Forest</h1>
+      <h5>Our dataset consisted of 30162 rows of data for our machine learning models, with 10 input features: age, hours-per-week, education, marital-status, work-class, occupation, gender, relationship, race, native country.</h5>
+      <h5>Using Scikit-learn's train_test_split module to split 75% of features (X) and target (y) data into training data and 25% for testing data.</h5>
+      <h5>Set n_estimators=100, random_state=1, we have a balanced accuracy score of 0.74 and precision of 0.81.</h5>
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8"><img src="/static/img/random_forest.png" class="w-100 m-2"></div>
     </div>
-
+  </div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="../static/js/forest.js"></script>
 </body>
 </html>

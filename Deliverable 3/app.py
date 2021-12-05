@@ -31,6 +31,30 @@ scaler = load(open('pkl/scaler_new.pkl','rb'))
 def home():
     return render_template('index.html')
 
+# Define the about and credits route
+@app.route('/about')
+def about():
+    return render_template('credits.html')
+
+# Define the svm route
+@app.route('/svm')
+def svm():
+    return render_template('svm.html')
+
+# Define the about and credits route
+@app.route('/randomforest')
+def random_forest():
+    return render_template('random_forest.html')
+
+# Define the about and credits route
+@app.route('/logregression')
+def log_regression():
+    return render_template('logistic_reg.html')
+
+# Define the about and credits route
+@app.route('/analysis')
+def analysis():
+    return render_template('analysis.html')
 
 # Define a route that runs when the user clicks the Predict button in the web-app
 @app.route('/predict',methods=['POST'])
