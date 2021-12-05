@@ -1,0 +1,50 @@
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background:rgb(234, 239, 241);
+  color: black;
+}
+
+
+.container h1{
+  color:rgb(60,91,89);
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.jumbotron h2 {
+  text-align: center;
+}
+
+img {
+  size: 50% 50%;
+  width:1100px;
+
+}
