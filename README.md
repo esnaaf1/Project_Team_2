@@ -115,6 +115,5 @@ Programming: (Javascript, Python, HTML):
 
 * Running python script to grab inputs from web entry running ML model (logistic regression) to predict income level based on input, with output showing whether user is likely to have income above or below $50K per year. Additional pages with deeper analysis and background, as described in interactive elements.
 
-* Hosting: Heroku (free tier)
 * Tableau public: Summarizing trends in data set among features used
 
