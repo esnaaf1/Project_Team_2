@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="static/css/style_analysis.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 
 </head>
 
@@ -19,7 +18,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style="color:rgb(196, 6, 230)">Income Classfication</a>
+      <a class="navbar-brand" href="{{ url_for('.home') }}" style="color:rgb(196, 6, 230)">Income Classfication</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
         aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home
+            <a class="nav-link active" href="{{ url_for('.home') }}">Home
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
@@ -36,9 +35,9 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
               aria-expanded="false" style="color:rgb(196, 6, 230)">ML Models</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="{{ url_for('.random_forest') }}">Random Forest</a>
-              <a class="dropdown-item" href="{{ url_for('.log_regression') }}">Logistic Regression</a>
-              <a class="dropdown-item" href="{{ url_for('.svm') }}">SVM</a>
+                <a class="dropdown-item" href="{{ url_for('.random_forest') }}">Random Forest</a>
+                <a class="dropdown-item" href="{{ url_for('.log_regression') }}">Logistic Regression</a>
+                <a class="dropdown-item" href="{{ url_for('.svm') }}">SVM</a>
             </div>
           </li>
           <li class="nav-item">

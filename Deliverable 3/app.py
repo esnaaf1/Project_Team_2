@@ -31,6 +31,10 @@ scaler = load(open('pkl/scaler_new.pkl','rb'))
 def home():
     return render_template('index.html')
 
+@app.route('/home')
+def return_home():
+    return render_template('index.html')
+
 # Define the about and credits route
 @app.route('/about')
 def about():

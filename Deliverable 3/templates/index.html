@@ -18,7 +18,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style="color:rgb(196, 6, 230)">Income Classfication</a>
+      <a class="navbar-brand" href="{{ url_for('.home') }}" style="color:rgb(196, 6, 230)">Income Classfication</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
         aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home
+            <a class="nav-link active" href="{{ url_for('.home') }}">Home
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
