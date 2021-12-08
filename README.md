@@ -1,5 +1,13 @@
 # Project_Team_2
 
+## Running the Application
+1. Clone repository to your local machine.
+2. Open Terminal/Git Bash
+3. Navigate to folder which contains application (folder with app.py file)
+4. Activate your python environment (conda activate PythonData or similar)
+5. Run the application from your command line (python app.py)
+6. Terminal/Git Bash will show * Running on http://127.0.0.1:5000/. Copy the url end point and paste into your browser window.
+
 ### Project Overview:
 The purpose of this project is to demonstrate the various coding languages we have learned over the course of the Bootcamp by using a dataset, building a machine learning model to provide a prediction, and visualizing the results for users.
 
