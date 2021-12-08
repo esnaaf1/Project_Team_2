@@ -1,4 +1,4 @@
-# Project_Team_2
+# Income classification
 
 ## Running the Application
 1. Clone repository to your local machine.
@@ -8,7 +8,7 @@
 5. Run the application from your command line (python app.py)
 6. Terminal/Git Bash will show * Running on http://127.0.0.1:5000/. Copy the url end point and paste into your browser window.
 
-### Project Overview:
+## Project Overview:
 The purpose of this project is to demonstrate the various coding languages we have learned over the course of the Bootcamp by using a dataset, building a machine learning model to provide a prediction, and visualizing the results for users.
 
 ### Selected Topic:
@@ -48,32 +48,6 @@ Income_Table - contains the columns listed in the description of data source.
 ### Training and testing dataset
 Using Scikit-learn's `train_test_split` module to split 75% of features (X) and target (y) data into training data and 25% for testing data.
 
-# Deliverable Two
-
-## Description of preliminary data pre-processing
-
-Find and drop total of 2399 missing data. Remaining 30162 rows of data for our machine learning model.
-
-Drop unnecessary columns: "fnlwgt", "education-num", "capital-gain", "capital-loss".
-
-Using `One-Hot Encoding` to fit and transform categorical variables.
-
-Using `StandardScaler` module standardizes the data so that the mean of each feature is 0 and standard deviation is 1.
-
-## Description of features used in the model
-
-1. Age: Current age (in years)
-2. Gender: Gender assigned at birth (Male/Female)
-3. Education-num: Years of education received (numerically, e.g. high school senior = 12)
-4. Education: Highest degree obtained (e.g. HS-grad, Bachelors)
-5. Occupation: Industry/role employed in (e.g. Exec-managerial, Craft-repair)
-6. Hours worked: Weekly hours employed (e.g. 40)
-
-## Description of how data was split for training/testing
-
-Using Scikit-learn's `train_test_split` module to split 75% of features (X) and target (y) data into training data and 25% for testing data.
-
-
 ### Explanation of model choice, including benefits and limitations
 
 - Random Forest vs. Logistic regression:
@@ -108,7 +82,9 @@ Run our models with the same train test split, comparison the balanced accuracy 
  
 Our best scores are with Logistic Regression with a balanced accuracy score of 0.75 and precision of 0.84.
 
-## Interactive elements
+## Dashboard
+
+### Interactive elements
 
 Our webpage will include input boxes for users to provide the necessary information for our model to run a prediction. The inputs are the features listed above.
 
@@ -117,7 +93,7 @@ Our webpage will also contain additional tabs which will provide the user insigh
 1. Our methodology into which machine learning models were tested, which model was selected to make predictions, and the rationale behind our selection.
 2. Additional data insights into the relationship between the features and model predictions.
 
-## Tools/technologies for the creating the dashboard
+### Tools/technologies for the creating the dashboard
 
 Programming: (Javascript, Python, HTML):
 
